@@ -12,8 +12,9 @@ const staticMessages = {
         `
     },
     register: function ({ name, token }) {
+        // const host_url = 'http://127.0.0.1:4200/activate?id='
         // const host_url = 'http://ucekacademics.s3-website-us-east-1.amazonaws.com/activate?id='
-        const host_url = 'http://127.0.0.1:4200/activate?id='
+        const host_url = 'https://deluxe-hotteok-616fc0.netlify.app/activate?id='
         return `
             <div>
                 <h1>Greetings from UCEK ACADEMICS</h1>

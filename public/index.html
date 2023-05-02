@@ -119,8 +119,9 @@
                             })
                         })
                         let result = await payment.json()
+                        // let link = 'http://127.0.0.1:4200/payment-status?status=' + result.status
                         // let link = 'http://ucekacademics.s3-website-us-east-1.amazonaws.com/payment-status?status=' + result.status
-                        let link = 'http://127.0.0.1:4200/payment-status?status=' + result.status
+                        let link = 'https://deluxe-hotteok-616fc0.netlify.app/payment-status?status=' + result.status
                         for (const key of ["roll", "name", "email", "purpose", "amount", "payment_id"]) {
                             link += '&' + key + '=' + (result[key] + "").split(" ").join("%20")
                         }
@@ -144,8 +145,9 @@
                         })
                     })
                     let result = await payment.json()
+                    // let link = 'http://127.0.0.1:4200/payment-status?status=' + result.status
                     // let link = 'http://ucekacademics.s3-website-us-east-1.amazonaws.com/payment-status?status=' + result.status
-                    let link = 'http://127.0.0.1:4200/payment-status?status=' + result.status
+                    let link = 'https://deluxe-hotteok-616fc0.netlify.app/payment-status?status=' + result.status
                     for (const key of ["roll", "name", "email", "purpose", "amount", "payment_id"]) {
                         link += '&' + key + '=' + result[key]
                     }
